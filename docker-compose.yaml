@@ -11,7 +11,9 @@ services:
     punto_b:
         build: .
         container_name: par_impar
-        command: node par_impar.js
+        volumes:
+            - ./par_impar.js:/par_impar.js
+        command: node /par_impar.js
 
     punto_c:
         image: php
