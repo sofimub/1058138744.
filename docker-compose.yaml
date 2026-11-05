@@ -1,0 +1,9 @@
+services:
+    punto_a:
+        image: python
+        container_name: test
+        ports:
+            - "8089:8089"
+        volumes:
+            - .:/app/locustfile.py
+        command: sh -c "pip install locust && locust -f /app/locustfile.py --web-host=0.0.0.0"
