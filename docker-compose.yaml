@@ -7,3 +7,8 @@ services:
         volumes:
             - .:/app/locustfile.py
         command: sh -c "pip install locust && locust -f /app/locustfile.py --web-host=0.0.0.0"
+
+    punto_b:
+        build: .
+        container_name: par_impar
+        command: node par_impar.js
