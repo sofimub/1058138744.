@@ -12,3 +12,11 @@ services:
         build: .
         container_name: par_impar
         command: node par_impar.js
+
+    punto_c:
+        image: php
+        container_name: ingenieria_software_para_conquistar
+        volumes:
+            - ./mensaje.php:/mensaje.php
+        command: php /mensaje.php
+
