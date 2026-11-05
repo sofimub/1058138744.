@@ -1,0 +1,10 @@
+services:
+  python_uno:
+    image: python
+    container_name: python_uno
+    command: sh -c "apt-get update && apt-get install -y iputils-ping && tail -f /dev/null"
+  
+  python_dos:
+    image: python
+    container_name: python_dos
+    command: sh -c "apt-get update && apt-get install -y iputils-ping && tail -f /dev/null"
