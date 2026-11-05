@@ -1,0 +1,7 @@
+services:
+  par_impar:
+    build: .
+    container_name: par_impar_python
+    ports:
+      - "5000:5000"
+    
